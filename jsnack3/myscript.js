@@ -3,7 +3,7 @@
 // un div avrà il testo colorato di rosso mentre l’altro di verde.
 // Partendo da un array di numeri, stampiamo nell’id rosso i numeri dispari e in verde i numeri pari.
 
-const numeriArray = ['1','2','3','4','5','6','7','8'];
+const numeriArray = [1,2,3,4,5,6,7,8];
 
 let divRed = document.createElement("div");
     document.body.appendChild(divRed);
@@ -23,8 +23,8 @@ for(let i=0; i < numeriArray; i++){
     if(numeriArray %2 == 0){
         divGreen.innerHTML += numeriArray;
         console.log('red');
-    }else (numeriArray %2 != 0);{
+    }else (numeriArray %2 != 0)
         divRed.innerHTML += numeriArray;
         console.log('green');
-    }
+    
 }
