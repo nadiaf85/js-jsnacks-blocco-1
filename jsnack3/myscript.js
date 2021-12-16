@@ -19,12 +19,13 @@ divRed.style.color="red";
 divGreen.style.color="green";
 
 
-for(let i=0; i < numeriArray; i++){
-    if(numeriArray %2 == 0){
-        divGreen.innerHTML += numeriArray;
+for(let i=0; i < numeriArray.length; i++){
+    if(numeriArray[i] %2 == 0){
+        divGreen.innerHTML += numeriArray[i];
         console.log('red');
-    }else (numeriArray %2 != 0)
-        divRed.innerHTML += numeriArray;
+    }else{
+        divRed.innerHTML += numeriArray[i];
         console.log('green');
+    }
     
 }
