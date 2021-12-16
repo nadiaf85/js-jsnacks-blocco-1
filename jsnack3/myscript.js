@@ -6,7 +6,14 @@
 const numeriArray = ['1','2','3','4','5','6','7','8'];
 
 let divRed = document.createElement("div");
+    document.body.appendChild(divRed);
+    divRed.classList.add("red");
+    
+
 let divGreen = document.createElement("div");
+    document.body.appendChild(divGreen);
+    divGreen.classList.add("green");
+    
 
 divRed.style.color="red";
 divGreen.style.color="green";
@@ -14,10 +21,10 @@ divGreen.style.color="green";
 
 for(let i=0; i < numeriArray; i++){
     if(numeriArray %2 == 0){
-        divRed.innerHTML += numeriArray;
+        divGreen.innerHTML += numeriArray;
         console.log('red');
     }else (numeriArray %2 != 0);{
-        divGreen.innerHTML += numeriArray;
+        divRed.innerHTML += numeriArray;
         console.log('green');
     }
 }
