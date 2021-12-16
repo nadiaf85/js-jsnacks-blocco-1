@@ -10,6 +10,7 @@ const myArray3 = ['33','1','55','71','43','15','24','8','90','6']
 
 let N = prompt('inserisci un numero');
 
+
 for(let i=0; i < 100; i++){
     console.log(N);
 
